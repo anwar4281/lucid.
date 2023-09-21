@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url(../images/banner....png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    position: relative;
+    margin-top: 25px;
+}
+.nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    position: relative;
+    padding: 0 !important;
+    margin-top: 25px;
+
+}
+.nav-item{
+    margin-left: 30px;
+}
+
+.nav-link:hover{
+    color: #ffff;
+}
+.nav-link::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    left:  0;
+    bottom: 0;
+    background-color: #008ed6;
+    position: absolute;
+    transition: .5s;
+}
+
+.nav-link:hover::before{
+    width: 48%;
+}
+
+.nav-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    right:  0;
+    bottom: 0;
+    background-color: #008ed6;
+    position: absolute;
+    transition: .5s;
+}
+
+.nav-link:hover::after{
+    width: 48%;
+}
+.banner{
+    align-items: center;
+    min-height: 100vh;
+}
+.banner h5{
+    color: #1084f0;
+    font-size: 18px;
+    text-transform: capitalize;
+    }
+
+.banner h2{
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin: 15px 0 20px 0;
+}
+
+.banner p{
+    color: #8b8282;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-bottom: 30px;
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+    right: 110px;
+    width: 35%;
+}
+.btn_download{
+    background-color: #1084f0;
+    text-transform: capitalize;
+    color: white;
+    padding: 0;
+    padding: 12px 25px;
+    border-radius: 3px;
+}
+.btn_view{
+    text-transform: capitalize;
+    /* background: transparent; */
+    color: white;
+    border: 1px solid;
+    margin-left: 20px;
+    padding: 0;
+    padding: 12px 25px;
+    border-radius: 3px;  
+    
+}
+
+.btn_download:hover{
+    background-color:  #008ed6;
+    color: white;
+}
+
+.btn_view:hover{
+    color: white;
+    background-color: #008ed6;
+}
+.feature{
+    margin-top: 60px;
+}
+.heading{
+    text-align: center;
+}
+.heading h4{
+    color: #008ed6;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-bottom: 11px;
+    text-transform: capitalize;
+}
+.heading h1{
+    font-weight: 550;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin-bottom: 14px;
+    }
+
+.heading span{
+    display: block;
+    height: 3px;
+    width: 30PX;
+    background-color: #1084f0;
+    margin: auto;
+    margin-bottom: 1PX;
+}
+.features_item{
+    align-items: center;
+}
+.features_item h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.features_item p{
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.icon_box{
+    height: 47px;
+    width: 47px;
+    border-radius: 50px;
+    border: 1px solid #8b8282;
+    color: #008ed6;
+    text-align: center;
+    line-height: 52px;
+    margin: auto;
+    
+}
+
+.device_details {
+    padding: 50px 0px;
+}
+
+.device_content {
+    padding: 100px 50px;
+}
+
+.device_content h4 {
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.device_content h1 {
+    font-size: 36px;
+    color: rgb(26, 26, 26);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.device_content span {
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: transparent;
+    transition: all 0.4s ease-in-out 0s;
+    position: relative;
+}
+
+.device_content span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 142, 214);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.device_content span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 142, 214);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.device_details:hover .device_content span::after {
+    width: 48%;
+}
+
+.device_details:hover .device_content span::before {
+    width: 48%;
+}
+
+.device_content p {
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.device_icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(0, 142, 214);
+}
+
+.icon_info {
+}
+
+.icon_info h6 {
+    font-size: 18px;
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+}
+
+.device_details_1 {
+    background: rgb(242, 242, 242);
+    padding: 50px 0px 20px;
+}
+
+.device_content_1 {
+    padding: 100px 50px;
+}
+
+.device_content_1 h4 {
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.device_content_1 h1 {
+    font-size: 36px;
+    color: rgb(26, 26, 26);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.device_content_1 p {
+    margin-top: 20px;
+    color: rgb(153, 153, 153);
+    line-height: 1.5;
+}
+
+.device_content_1 span {
+    display: block;
+    height: 3px;
+    width: 50px;
+    background: transparent;
+    transition: all 0.4s ease-in-out 0s;
+    position: relative;
+}
+
+.device_content_1 span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 142, 214);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.device_content_1 span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 142, 214);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.device_details_1:hover .device_content_1 span::after {
+    width: 48%;
+}
+
+.device_details_1:hover .device_content_1 span::before {
+    width: 48%;
+}
+
+
+
+
+
+
+
+
